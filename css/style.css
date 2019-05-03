@@ -1,0 +1,52 @@
+body {
+    background-color: #c1c1c1;
+}
+.frame {
+    display: inline-block;
+    position: absolute;
+    width: 607px;
+    height: 232px;
+    left: 616px;
+    top: 223px;
+    margin: 0;
+    padding: 0;
+}
+.rectangle {
+    display: inline-block;
+    position: absolute;
+    width: 607px;
+    height: 232px;
+    background-color: #FFFFFF;
+    left: 616px;
+    top: 223px;
+    border-radius: 10px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.group {
+  position: absolute;
+width: 337px;
+height: 124px;
+left: 135px;
+top: 54px;
+}
+.user {
+    /* New User */
+    margin:0;
+    padding:0;
+    position: relative;
+    width: 130px;
+    height: 36px;
+    left: 238px;
+    top: 54px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;
+    color: #333333;
+    /* Черный */
+    border-radius: 10px;
+}
