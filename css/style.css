@@ -116,6 +116,7 @@ p {
     /* identical to box height */
     text-align: center;
     color: #333333;
+    background-color:red;
     /* Черный */
 }
 
@@ -134,6 +135,7 @@ p {
     line-height: 23px;
     vertical-align: central;
     padding-left: 20px;
+  
 }
 
 .FrameBottom-text {
@@ -156,29 +158,85 @@ p {
 
 .FrameBottom-login-position {
     display: block;
-    position: relative;
+    position: absolute;
     left: 64px;
     top: 116px;
-   
+    width:277px;
+    height:24px;
+    margin:0;
+    padding:0;
 }
 
 .FrameBottom-input-positionL {
     display: block;
-    position: relative;
+    position:absolute;
     left: 64px;
-    top: 145px;
+    top: 145px;  
 }
 
 .FrameBottom-input-positionE {
     display: block;
-    position: relative;
+    position: absolute;
     left: 64px;
     top: 262px;
+    margin:0;
+    padding:0;
 }
 .FrameBottom-email-position {
     display: block;
-    position: relative;
+    position: absolute;
     left: 64px;
     top: 223px;
-   
+    width: 277px;
+    height: 24px;    
+}
+.FrameBottom-password-position {
+    display: block;
+    position: absolute;
+    left: 64px;
+    top: 350px;
+    width: 277px;
+    height: 24px;
+}
+.FrameBottom-input-positionP {
+    display: block;
+    position: absolute;
+    left: 64px;
+    top: 379px;
+}
+.FrameBottom-FirstName-position {
+    display: block;
+    position: absolute;
+    left: 64px;
+    top: 467px;
+}
+.FrameBottom-LastName-position {
+    display: block;
+    position: absolute;
+    left: 316px;
+    top: 467px;
+}
+.FrameBottom-Country-position {
+    display: block;
+    position: absolute;
+    left: 64px;
+    top: 584px;
+}
+.FrameBottom-Sity-position {
+    display: block;
+    position: absolute;
+    left: 316px;
+    top: 584px;
+}
+.FrameBottom-BirthDay-position {
+    display: block;
+    position: absolute;
+    left: 64px;
+    top: 701px;
+}
+.FrameBottom-ZipCode-position {
+    display: block;
+    position: absolute;
+    left: 316px;
+    top: 701px;
 }
