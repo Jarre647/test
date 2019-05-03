@@ -1,19 +1,21 @@
 body {
     background-color: #c1c1c1;
 }
+
 .frameUp {
     display: inline-block;
-    position: absolute;    
+    position: absolute;
     width: 607px;
     height: 232px;
     left: 616px;
     top: 223px;
-    
 }
-p{
-    margin:0;
-    padding:0;
+
+p {
+    margin: 0;
+    padding: 0;
 }
+
 .rectangle {
     display: inline-block;
     position: absolute;
@@ -25,20 +27,21 @@ p{
     border-radius: 10px;
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
+
 .user {
     /* New User */
-      position: absolute;
+    position: absolute;
     width: 130px;
     height: 36px;
-   top:54px;
-   left:238px;
+    top: 54px;
+    left: 238px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
     /* identical to box height */
-    vertical-align:central;
+    vertical-align: central;
     text-align: center;
     color: #333333;
     /* Черный */
@@ -62,15 +65,15 @@ p{
     color: #333333;
     /* Черный */
     border-radius: 10px;
-  
 }
+
 .Ulogin {
-    display: inline-block; 
+    display: inline-block;
     color: #c1c1c1;
 }
 /* SomeCool@gmail.com */
 .Umail {
-    display:inline-block;
+    display: inline-block;
     position: absolute;
     width: 205px;
     height: 24px;
@@ -86,4 +89,96 @@ p{
     color: #333333;
     /* Черный */
     border-radius: 10px;
+}
+
+.FrameBottom {
+    display: inline-block;
+    position: absolute;
+    top: 471px;
+    left: 617px;
+    width: 606px;
+    height: 991px;
+    background-color: white;
+}
+
+.FrameBottom-signup {
+    /* Sign up */
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    left: 253px;
+    top: 64px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;
+    color: #333333;
+    /* Черный */
+}
+
+.FrameBottom-input {
+    width: 480px;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #C1C1C1;
+    border-radius: 4px;
+    color: #333333;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    vertical-align: central;
+    padding-left: 20px;
+}
+
+.FrameBottom-text {
+    /* Login* */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #888888;
+    /* Дополнительный */
+}
+
+.FrameBottom-star {
+    color: red;
+}
+
+.FrameBottom-login-position {
+    display: block;
+    position: relative;
+    left: 64px;
+    top: 116px;
+   
+}
+
+.FrameBottom-input-positionL {
+    display: block;
+    position: relative;
+    left: 64px;
+    top: 145px;
+}
+
+.FrameBottom-input-positionE {
+    display: block;
+    position: relative;
+    left: 64px;
+    top: 262px;
+}
+.FrameBottom-email-position {
+    display: block;
+    position: relative;
+    left: 64px;
+    top: 223px;
+   
 }
