@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>test</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="css/style.css">   
 </head>
 <body>
     <div class="rectangle"> </div>
@@ -16,49 +17,78 @@
             <div class="Umail"><p> SomeCool@gmail.com</p></div>
         </div>
     </div>
+    <div class="">
 
+    </div>
 
+    <div id="app">
+        {{message}}
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                message: '123'
+            }
+        })
+    </script>
     <form class="FrameBottom">
-        <div class="FrameBottom-signup"><p>Sign Up</p></div>
-        <div class="FrameBottom-login-position">
-            <p class="FrameBottom-text">Login<span class="FrameBottom-star">*</span></p>
-        </div>
-        <div class="FrameBottom-input-positionL">
-            <input class="FrameBottom-input" type="text" name="login" value="SomeCollLogin">
-        </div>
-        <div class="FrameBottom-email-position">
-            <p class="FrameBottom-text">Email<span class="FrameBottom-star">*</span></p>
-        </div>
-        <div class="FrameBottom-input-positionE">
-            <input class="FrameBottom-input" type="text" name="Email" value="SomeColl@gmail.com">
-        </div>
-        <div class="FrameBottom-password-position">
-            <p class="FrameBottom-text">Password</p>
-        </div>
-        <div class="FrameBottom-input-positionP">
-            <input class="FrameBottom-input" type="text" name="Password">
-        </div>
-        <div class="FrameBottom-FirstName-position">
-            <p class="FrameBottom-text">First name</p>
-        </div>
-        <div class="FrameBottom-LastName-position">
-            <p class="FrameBottom-text">Last name</p>
-        </div>
-        <div class="FrameBottom-Country-position">
-            <p class="FrameBottom-text">Country</p>
-        </div>
-        <div  class="FrameBottom-Sity-position">
-            <p class="FrameBottom-text">Sity</p>
-        </div>
-        <div  class="FrameBottom-BirthDay-position">
-            <p class="FrameBottom-text">Date of birth</p>
-        </div>
-        <div  class="FrameBottom-ZipCode-position">
-            <p class="FrameBottom-text">Zip code</p>
-        </div>
+
         <div>
-            <input type="button" value="SIGN UP">
-        </div>   
+            <div>
+
+            </div>
+            <div class="FrameBottom-signup"><p>Sign Up</p></div>
+            <div class="FrameBottom-login-position">
+                <p class="FrameBottom-text">Login<span class="FrameBottom-star">*</span></p>
+            </div>
+            <div class="FrameBottom-input-positionL">
+                <input class="FrameBottom-input" type="text" name="login" value="SomeCollLogin" v-model="post.title">
+            </div>
+
+            <div class="FrameBottom-email-position">
+                <p class="FrameBottom-text">Email<span class="FrameBottom-star" v-model="post.text">*</span></p>
+            </div>
+            <div class="FrameBottom-input-positionE">
+                <input class="FrameBottom-input" type="text" name="Email" value="SomeColl@gmail.com">
+            </div>
+            <div class="FrameBottom-password-position">
+                <p class="FrameBottom-text">Password</p>
+            </div>
+            <div class="FrameBottom-input-positionP">
+                <input class="FrameBottom-input" type="text" name="Password">
+            </div>
+            <div class="FrameBottom-FirstName-position">
+                <p class="FrameBottom-text">First name</p>
+            </div>
+            <div class="FrameBottom-LastName-position">
+                <p class="FrameBottom-text">Last name</p>
+            </div>
+            <div class="FrameBottom-Country-position">
+                <p class="FrameBottom-text">Country</p>
+            </div>
+            <div class="FrameBottom-Sity-position">
+                <p class="FrameBottom-text">Sity</p>
+            </div>
+            <div class="FrameBottom-BirthDay-position">
+                <p class="FrameBottom-text">Date of birth</p>
+            </div>
+            <div class="FrameBottom-ZipCode-position">
+                <p class="FrameBottom-text">Zip code</p>
+            </div>
+            <div>
+                <input type="button" value="SIGN UP">
+            </div>
+
+
+
+
+
+            <div>
+
+
+            </div>
+        </div>
     </form>
 
 </body>

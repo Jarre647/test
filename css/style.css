@@ -29,8 +29,7 @@ p {
 }
 
 .user {
-    /* New User */
-    position: absolute;
+      position: absolute;
     width: 130px;
     height: 36px;
     top: 54px;
@@ -40,15 +39,14 @@ p {
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
-    /* identical to box height */
+ 
     vertical-align: central;
     text-align: center;
     color: #333333;
-    /* Черный */
+
     border-radius: 10px;
 }
-/* Firstname Lastname / SomeCollLogin */
-/* Firstname Lastname / SomeCollLogin */
+
 .Uname {
     position: absolute;
     width: 337px;
@@ -60,18 +58,15 @@ p {
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
-    /* identical to box height */
-    text-align: center;
+      text-align: center;
     color: #333333;
-    /* Черный */
-    border-radius: 10px;
+       border-radius: 10px;
 }
 
 .Ulogin {
     display: inline-block;
     color: #c1c1c1;
 }
-/* SomeCool@gmail.com */
 .Umail {
     display: inline-block;
     position: absolute;
@@ -84,11 +79,9 @@ p {
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
-    /* identical to box height */
-    text-align: center;
+     text-align: center;
     color: #333333;
-    /* Черный */
-    border-radius: 10px;
+        border-radius: 10px;
 }
 
 .FrameBottom {
@@ -102,8 +95,7 @@ p {
 }
 
 .FrameBottom-signup {
-    /* Sign up */
-    position: absolute;
+       position: absolute;
     width: 110px;
     height: 36px;
     left: 253px;
@@ -113,11 +105,9 @@ p {
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
-    /* identical to box height */
-    text-align: center;
+       text-align: center;
     color: #333333;
-    background-color:red;
-    /* Черный */
+    background-color:red;  
 }
 
 .FrameBottom-input {
@@ -134,8 +124,7 @@ p {
     font-size: 20px;
     line-height: 23px;
     vertical-align: central;
-    padding-left: 20px;
-  
+    padding-left: 20px;  
 }
 
 .FrameBottom-text {
