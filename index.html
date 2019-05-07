@@ -88,7 +88,7 @@
                 <p class="FrameBottom-text">Zip code</p>
             </div>
             <div id="sender">
-                <button v-bind:class="{{ active: isActive, 'inactive': hasError }}" @click="send">SIGN UP</button>
+                <button v-bind:class="{{ active: isActive, 'inactive': error }}" @click="send">SIGN UP</button>
             </div>
     </form>
 
