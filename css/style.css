@@ -29,7 +29,7 @@ p {
 }
 
 .user {
-      position: absolute;
+    position: absolute;
     width: 130px;
     height: 36px;
     top: 54px;
@@ -39,11 +39,9 @@ p {
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
- 
     vertical-align: central;
     text-align: center;
     color: #333333;
-
     border-radius: 10px;
 }
 
@@ -58,15 +56,16 @@ p {
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
-      text-align: center;
+    text-align: center;
     color: #333333;
-       border-radius: 10px;
+    border-radius: 10px;
 }
 
 .Ulogin {
     display: inline-block;
     color: #c1c1c1;
 }
+
 .Umail {
     display: inline-block;
     position: absolute;
@@ -79,9 +78,9 @@ p {
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
-     text-align: center;
+    text-align: center;
     color: #333333;
-        border-radius: 10px;
+    border-radius: 10px;
 }
 
 .FrameBottom {
@@ -95,7 +94,7 @@ p {
 }
 
 .FrameBottom-signup {
-       position: absolute;
+    position: absolute;
     width: 110px;
     height: 36px;
     left: 253px;
@@ -105,9 +104,8 @@ p {
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
-       text-align: center;
+    text-align: center;
     color: #333333;
-   
 }
 
 .FrameBottom-input {
@@ -124,7 +122,7 @@ p {
     font-size: 20px;
     line-height: 23px;
     vertical-align: central;
-    padding-left: 20px;  
+    padding-left: 20px;
 }
 
 .FrameBottom-text {
@@ -150,17 +148,17 @@ p {
     position: absolute;
     left: 64px;
     top: 116px;
-    width:277px;
-    height:24px;
-    margin:0;
-    padding:0;
+    width: 277px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 .FrameBottom-input-positionL {
     display: block;
-    position:absolute;
+    position: absolute;
     left: 64px;
-    top: 145px;  
+    top: 145px;
 }
 
 .FrameBottom-input-positionE {
@@ -168,17 +166,19 @@ p {
     position: absolute;
     left: 64px;
     top: 262px;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
 .FrameBottom-email-position {
     display: block;
     position: absolute;
     left: 64px;
     top: 223px;
     width: 277px;
-    height: 24px;    
+    height: 24px;
 }
+
 .FrameBottom-password-position {
     display: block;
     position: absolute;
@@ -187,64 +187,76 @@ p {
     width: 277px;
     height: 24px;
 }
+
 .FrameBottom-input-positionP {
     display: block;
     position: absolute;
     left: 64px;
     top: 379px;
 }
+
 .FrameBottom-FirstName-position {
     display: block;
     position: absolute;
     left: 64px;
     top: 467px;
 }
+
 .FrameBottom-LastName-position {
     display: block;
     position: absolute;
     left: 316px;
     top: 467px;
 }
+
 .FrameBottom-Country-position {
     display: block;
     position: absolute;
     left: 64px;
     top: 584px;
 }
+
 .FrameBottom-Sity-position {
     display: block;
     position: absolute;
-    left: 316px;
+    left: 325px;
     top: 584px;
 }
+
 .FrameBottom-BirthDay-position {
     display: block;
     position: absolute;
     left: 64px;
     top: 701px;
 }
+
 .FrameBottom-ZipCode-position {
     display: block;
     position: absolute;
     left: 316px;
     top: 701px;
 }
+
 .FrameBottom-Input-Size .FrameBottom-input {
-    width: 228px;
+    width: 220px;
     height: 64px;
+    padding-right: 0;
 }
+
 .FrameBottom-FirstName-position {
     display: block;
     position: absolute;
     top: 496px;
-    left:64px;
+    left: 64px;
 }
+
 .FrameBottom-LastName-position {
     display: block;
     position: absolute;
     top: 496px;
-    left: 316px;
+    left: 325px;
 }
+
 select {
     width: 228px;
     height: 64px;
@@ -260,4 +272,42 @@ select {
     line-height: 23px;
     vertical-align: central;
     padding-left: 20px;
+}
+
+.sender {
+    /* Rectangle */
+    position: absolute;
+    /* Синий */
+    background: #0056D8;
+    border-radius: 0px 20px;
+    /* SIGN UP */
+    position: absolute;
+    height: 24px;
+    left: 24px;
+    right: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    /* Белый */
+    height: 64px;
+    width: 324px;
+    left: 142px;
+    top: 840px;
+}
+
+    .sender:hover {
+        background: #003585;
+    }
+
+    .sender:active {
+        width: 292px;
+        height: 56px;
+        background: #003585;
+        left: 157px;
+    }
+.FrameBottom-input :active {
+    border-color: #0056D8;
 }
