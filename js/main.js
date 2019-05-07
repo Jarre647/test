@@ -234,17 +234,15 @@ new Vue({
 });
 new Vue({
     el: 'sender',
-   
+
     data: {
-        isActive: true,
-        error: null
+        class: true
     },
     computed: {
         classObject: function () {
-            return {
-                active: this.isActive && !this.error,
-                'text-danger': this.error && this.error.type === 'fatal'
-            }
+            return this.store.state.login !== '' || this.store.state.email !== '';
         }
-    }
+
+    } 
+  
 })

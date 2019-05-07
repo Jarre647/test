@@ -78,7 +78,8 @@
                         <option v-for="option in options" v-bind:value="option.value">
                             {{ option.text }}
                         </option>
-                    </select>             
+                    </select>            
+                {{}}
             </div>
             </div>
             <div class="FrameBottom-BirthDay-position">
@@ -87,9 +88,9 @@
             <div class="FrameBottom-ZipCode-position">
                 <p class="FrameBottom-text">Zip code</p>
             </div>
-            <div id="sender">
-                <button v-bind:class="{{ active: isActive, 'inactive': error }}" @click="send">SIGN UP</button>
-            </div>
+          
+                <button class="sender" @click="send">SIGN UP</button>
+            
     </form>
 
     <script src="js/main.js"></script>
