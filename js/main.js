@@ -73,11 +73,13 @@
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
-    
+
     state: {
-        login: 'SomeCollLogin',  
+        login: 'SomeCollLogin',
         email: 'SomeCool@gmail.com',
-       password:''
+        password: '',
+        FirstName: 'FirstName',
+        LastName: 'LastName'
     },
     mutations: {
         updateLogin(state, login) {
@@ -86,10 +88,15 @@ const store = new Vuex.Store({
         updateEmail(state, email) {
             state.email = email
         },
-         updatePassword(state, password) {
-             state.password = password
+        updatePassword(state, password) {
+            state.password = password
+        },
+        updateFirstName(state, FirstName) {
+            state.FirstName = FirstName
+        },
+        updateLastNamee(state, LastName) {
+            state.LastName = LastName
         }
-
     }
 });
 
@@ -102,7 +109,7 @@ new Vue({
     el: '#login',
     store,
     data: {
-        
+
     },
     computed: {
         message: {
@@ -166,5 +173,72 @@ new Vue({
             }
         }
     }
+});
+new Vue({
+    el: '#FirstName',
+    store,
+    data: {
+
+    },
+    computed: {
+        log: {
+            get() {
+                return this.$store.state.email
+            },
+            set(value) {
+                this.$store.commit('updateFirstName', value)
+            }
+        },
+
+        methods: {
+            updateFirstName(e) {
+                this.$store.commit('updateFirstName', e.target.value)
+            }
+        }
+    }
+});
+new Vue({
+    el: '#LastName',
+    store,
+    data: {
+
+    },
+    computed: {
+        log: {
+            get() {
+                return this.$store.state.LastName
+            },
+            set(value) {
+                this.$store.commit('updateLastName', value)
+            }
+        },
+
+        methods: {
+            updateLastName(e) {
+                this.$store.commit('updateLastName', e.target.value)
+            }
+        }
+    }
+});
+//new Vue({
+//    el: '#city',
+//    data: {
+//        selected: none,
+//        options: [
+//            { text: 'City 17', value: 'City 17' },
+//            { text: 'City 40', value: 'City 40' },
+//            { text: 'City 49', value: 'City 49' }
+//        ]
+//    }
+//})
+new Vue({
+    el: '#city',
+    data: {
+        selected: 'А',
+        options: [
+            { text: 'City 17', value: 'City 17' },
+            { text: 'City 40', value: 'City 40' },
+            { text: 'City 49', value: 'City 49' }
+        ]
+    }
 })
-  

@@ -229,3 +229,29 @@ p {
     left: 316px;
     top: 701px;
 }
+.FrameBottom-Input-Size .FrameBottom-input {
+    width:228px;
+}
+.FrameBottom-FirstName-position {
+    display: block;
+    position: absolute;
+    top: 496px;
+    left:64px;
+}
+.FrameBottom-LastName-position {
+    display: block;
+    position: absolute;
+    top: 496px;
+    left: 316px;
+}
+.asfg {
+    border-radius: 0;
+    background: transparent;
+    height: 34px;
+    padding: 5px;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-appearance: none;
+    width: 268px;
+}

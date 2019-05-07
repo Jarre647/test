@@ -15,7 +15,7 @@
             <div class="group">
                 <div class="user"><p>New User</p></div>
                 <div class="Uname">
-                    <p> Firstname Lastname / <span class="Ulogin">{{$store.state.login}}</span></p>
+                    <p> {{$store.state.FirstName}} {{$store.state.LastName}} / <span class="Ulogin">{{$store.state.login}}</span></p>
                 </div>
                 <div class="Umail"><p>{{$store.state.email}}</p></div>
             </div>
@@ -49,21 +49,43 @@
             <p class="FrameBottom-text">Password</p>
         </div>
         <div class="FrameBottom-input-positionP">
-            <div>
+            <div id="password">
                 <input class="FrameBottom-input" type="text" name="Password" v-model="$store.state.password">
             </div>
         </div>
-        <div class="FrameBottom-FirstName-position">
-            <p class="FrameBottom-text">First name</p>
-        </div>
-        <div class="FrameBottom-LastName-position">
-            <p class="FrameBottom-text">Last name</p>
+        <div class="FrameBottom-Input-Size">
+            <div class="FrameBottom-FirstName-position">
+                <div id="FirstName">
+                    <p class="FrameBottom-text">First Name</p>
+                    <input class="FrameBottom-input" type="text" name="FirstName" v-model="$store.state.FirstName" />
+                </div>
+            </div>
+            <div class="FrameBottom-LastName-position">
+                <p class="FrameBottom-text">Last Name</p>
+                <div id="LastName">
+                    <input class="FrameBottom-input" type="text" name="LastName" v-model="$store.state.LastName" />
+                </div>
+            </div>
         </div>
         <div class="FrameBottom-Country-position">
             <p class="FrameBottom-text">Country</p>
         </div>
         <div class="FrameBottom-Sity-position">
             <p class="FrameBottom-text">Sity</p>
+            <div id="city">
+                <select v-model="selected">
+                    <div class="FrameBottom-input">
+
+                        <div class="asfg">
+                            <option v-for="option in options" v-bind:value="option.value">
+                                {{ option.text }}
+                            </option>
+                        </div>
+                    </div>
+                </select>
+                <span>Выбрано: {{ selected }}</span>
+
+            </div>
         </div>
         <div class="FrameBottom-BirthDay-position">
             <p class="FrameBottom-text">Date of birth</p>
