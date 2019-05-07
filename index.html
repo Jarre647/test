@@ -73,26 +73,20 @@
         <div class="FrameBottom-Sity-position">
             <p class="FrameBottom-text">Sity</p>
             <div id="city">
-                <select v-model="selected">
-                    <div class="FrameBottom-input">
-
-                        <div class="asfg">
-                            <option v-for="option in options" v-bind:value="option.value">
-                                {{ option.text }}
-                            </option>
-                        </div>
-                    </div>
-                </select>
-                <span>Выбрано: {{ selected }}</span>
-
+               
+                    <select v-model="selected">
+                        <option v-for="option in options" v-bind:value="option.value">
+                            {{ option.text }}
+                        </option>
+                    </select>             
             </div>
-        </div>
-        <div class="FrameBottom-BirthDay-position">
-            <p class="FrameBottom-text">Date of birth</p>
-        </div>
-        <div class="FrameBottom-ZipCode-position">
-            <p class="FrameBottom-text">Zip code</p>
-        </div>
+            </div>
+            <div class="FrameBottom-BirthDay-position">
+                <p class="FrameBottom-text">Date of birth</p>
+            </div>
+            <div class="FrameBottom-ZipCode-position">
+                <p class="FrameBottom-text">Zip code</p>
+            </div>
 
     </form>
 

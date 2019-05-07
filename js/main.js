@@ -234,8 +234,9 @@ new Vue({
 new Vue({
     el: '#city',
     data: {
-        selected: 'А',
+        selected: 'select',
         options: [
+            { text: 'select', value: 'select' },
             { text: 'City 17', value: 'City 17' },
             { text: 'City 40', value: 'City 40' },
             { text: 'City 49', value: 'City 49' }
