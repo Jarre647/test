@@ -220,17 +220,6 @@ new Vue({
         }
     }
 });
-//new Vue({
-//    el: '#city',
-//    data: {
-//        selected: none,
-//        options: [
-//            { text: 'City 17', value: 'City 17' },
-//            { text: 'City 40', value: 'City 40' },
-//            { text: 'City 49', value: 'City 49' }
-//        ]
-//    }
-//})
 new Vue({
     el: '#city',
     data: {
@@ -241,5 +230,12 @@ new Vue({
             { text: 'City 40', value: 'City 40' },
             { text: 'City 49', value: 'City 49' }
         ]
+    }
+});
+new Vue({
+    el: 'sender',
+    data: {
+        active: true,
+        inactive: false
     }
 })

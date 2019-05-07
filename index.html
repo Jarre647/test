@@ -71,7 +71,7 @@
             <p class="FrameBottom-text">Country</p>
         </div>
         <div class="FrameBottom-Sity-position">
-            <p class="FrameBottom-text">Sity</p>
+            <p class="FrameBottom-text">City</p>
             <div id="city">
                
                     <select v-model="selected">
@@ -87,8 +87,8 @@
             <div class="FrameBottom-ZipCode-position">
                 <p class="FrameBottom-text">Zip code</p>
             </div>
-            <div >
-                <button class="sender" @click="send">SIGN UP</button>
+            <div id="sender">
+                <button v-bind:class="{{ active: isActive, 'inactive': hasError }}" @click="send">SIGN UP</button>
             </div>
     </form>
 
